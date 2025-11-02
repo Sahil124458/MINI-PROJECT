@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Portfolio | Sahil, Samarth & Sarthak</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">Team Portfolio</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <h1>Our Creative Team</h1>
+  <p class="tagline">Turning ideas into code, design & innovation 💡</p>
+</header>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p style="max-width:700px;margin:1rem auto;color:#ccc;">We are a passionate group of Computer Science students who love building creative digital experiences. From front-end design to back-end logic, we cover it all — with teamwork, creativity, and curiosity.</p>
+</section>
+
+<section id="projects">
+  <h2>Our Projects</h2>
+  <div class="projects">
+    <div class="project-card"><h3>Portfolio Website</h3><p>A responsive and animated team portfolio built with HTML, CSS, JS and Google Sheet API.</p></div>
+    <div class="project-card"><h3>College Event App</h3><p>An app to register and manage college tech events, built with Node.js backend.</p></div>
+    <div class="project-card"><h3>AI Study Assistant</h3><p>A smart web assistant using APIs for helping students with quick concept search.</p></div>
+  </div>
+</section>
+
+<section id="team">
+  <h2>Meet Our Team</h2>
+  
+
+  <div class="team">
+    <!-- Sahil -->
+    <div class="member" onclick="openModal('sahil')">
+      <img src="sahilpic.png" class="profile" alt="Sahil Khanna">
+      <h3>Sahil Khanna</h3>
+      <p>Frontend Developer</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/sahil-khanna-940905331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/SahilKhanna82" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Samarth -->
+    <div class="member" onclick="openModal('samarth')">
+      <img src="samarthpic.png" class="profile" alt="Samarth Srivastav">
+      <h3>Samarth Srivastav</h3>
+      <p>Backend Developer</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/samarth-srivastav-782053350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/srivastavsamarth7-cyber" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Sarthak -->
+    <div class="member" onclick="openModal('sarthak')">
+      <img src="sarthakpic.jpg" class="profile" alt="Sarthak Bhardwaj">
+      <h3>Sarthak Bhardwaj</h3>
+      <p>UI/UX Designer</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/sarthak-bhardwaj-236542329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/sarthak-bhardwaj28" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Popups -->
+<div id="sahil" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('sahil')">&times;</span>
+    <img src="sahilpic.png" alt="Sahil Khanna">
+    <h2>Sahil Khanna</h2>
+    <p><b>Frontend Developer</b></p>
+    <div class="socials">
+      <a href="https://https://www.linkedin.com/in/sahil-khanna-940905331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/SahilKhanna82" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <ul class="skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Responsive Design</li></ul>
+    <p>Expert in front-end frameworks and animations. Loves creating modern UI layouts and smooth transitions.</p>
+  </div>
+</div>
+
+<div id="samarth" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('samarth')">&times;</span>
+    <img src="samarthpic.png" alt="Samarth Srivastav">
+    <h2>Samarth Srivastav</h2>
+    <p><b>Backend Developer</b></p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/samarth-srivastav-782053350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/srivastavsamarth7-cyber" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <ul class="skills"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>API Integration</li><li>Python</li></ul>
+    <p>Handles backend logic and API connections for scalable applications.</p>
+  </div>
+</div>
+
+<div id="sarthak" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('sarthak')">&times;</span>
+    <img src="sarthakpic.jpg" alt="Sarthak Bhardwaj">
+    <h2>Sarthak Bhardwaj</h2>
+    <p><b>UI/UX Designer</b></p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/sarthak-bhardwaj-236542329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/sarthak-bhardwaj28" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <ul class="skills"><li>Figma</li><li>Adobe XD</li><li>Prototyping</li><li>Wireframing</li><li>Design Systems</li></ul>
+    <p>Designs clean and intuitive interfaces ensuring great user experiences.</p>
+  </div>
+</div>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Team Portfolio | Built with ❤️ by Sahil, Samarth & Sarthak
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
