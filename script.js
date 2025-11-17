@@ -16,3 +16,37 @@ function openModal(id){document.getElementById(id).style.display="flex";}
     .then(()=>{alert("Message sent successfully!");form.reset();})
     .catch(()=>alert("Error sending message!"));
   });
+const answers = {
+  "What is this website?": "This is our Team Portfolio website.",
+  "Who created it?": "Created by Sahil Khanna, Sarthak Bhardwaj, and Samarth Srivastav.",
+  "Which technologies used?": "HTML, CSS, JavaScript & Google Sheets API.",
+  "Where is it hosted?": "Hosted using GitHub Pages.",
+  "Purpose of website?": "To showcase our work, team members, and skills.",
+  "How to contact?": "Use the Contact Form — connected directly with Google Sheets.",
+  "Tools used?": "VS Code, GitHub, Google Sheets Script.",
+  "Main goal?": "To learn, build, and present a real-world project."
+};
+
+/* OPEN BOT */
+document.getElementById("floatingBotBtn").onclick = () => {
+  document.getElementById("botPanel").style.display = "flex";
+};
+
+/* CLOSE BOT */
+document.getElementById("closeBot").onclick = () => {
+  document.getElementById("botPanel").style.display = "none";
+};
+
+/* HANDLE QUESTION CLICK */
+document.querySelectorAll(".question").forEach(q => {
+  q.onclick = () => {
+    const chat = document.getElementById("chatArea");
+
+    chat.innerHTML += `
+      <div class="msg-user">${q.innerText}</div>
+      <div class="msg-bot">${answers[q.innerText]}</div>
+    `;
+
+    chat.scrollTop = chat.scrollHeight;
+  };
+});
