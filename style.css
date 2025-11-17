@@ -221,3 +221,122 @@
     font-size:.9rem;
     color:#aaa;
   }
+/* ===== FLOATING BUTTON ===== */
+#floatingBotBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff77e9, #b300ff);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  animation: floatPulse 2.2s infinite ease-in-out;
+  box-shadow: 0px 4px 25px rgba(255,0,255,0.45);
+  transition: .3s;
+  z-index: 9999;
+}
+
+#floatingBotBtn:hover {
+  transform: scale(1.12);
+  box-shadow: 0px 6px 35px rgba(255,0,255,0.6);
+}
+
+/* ===== BOT PANEL ===== */
+#botPanel {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 330px;
+  height: 470px;
+  background: rgba(18, 18, 40, 0.92);
+  backdrop-filter: blur(18px);
+  border-radius: 22px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp .45s ease-out;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.55);
+  z-index: 9999;
+  border: 2px solid rgba(120, 60, 255, 0.3);
+}
+
+/* ===== HEADER ===== */
+.bot-header {
+  background: linear-gradient(135deg, #00eaff, #b300ff);
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ===== QUESTIONS ===== */
+.bot-questions {
+  display: flex;
+  overflow-x: auto;
+  padding: 14px;
+  gap: 14px;
+  background: linear-gradient(135deg, #2a1b57, #3a256b, #4b2d82);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.question {
+  padding: 10px 18px;
+  font-size: 14px;
+  background: linear-gradient(135deg, #00eaff, #b300ff);
+  border-radius: 30px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  color: white;
+  transition: 0.25s;
+}
+
+.question:hover {
+  transform: scale(1.08);
+}
+
+/* ===== CHAT AREA ===== */
+#chatArea {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* USER MESSAGE */
+.msg-user {
+  background: rgba(255, 118, 230, 0.15);
+  border-left: 3px solid #ff55ee;
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 14px;
+  max-width: 80%;
+  margin: 8px 0;
+  align-self: flex-end;
+  animation: fadeIn .3s ease;
+  color: #fff;
+}
+
+/* BOT MESSAGE (BIGGER + LIGHT BACKGROUND) */
+.msg-bot {
+  background: #ffffffd8;        /* LIGHT BACKGROUND */
+  color: #1b0050;               /* Dark text */
+  font-size: 15.5px;            /* Bigger text */
+  padding: 12px 16px;           /* Bigger padding */
+  border-radius: 14px;
+  max-width: 80%;
+  margin: 10px 0;
+  align-self: flex-start;
+  animation: fadeIn .3s ease;
+  border-left: 4px solid #b300ff;
+  box-shadow: 0 2px 10px rgba(255,255,255,0.15);
+}
