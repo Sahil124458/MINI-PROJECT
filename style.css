@@ -111,7 +111,7 @@
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:1.5rem;
+    gap:1.7rem;
   }
   .project-card{
     background:rgba(255,255,255,0.1);
