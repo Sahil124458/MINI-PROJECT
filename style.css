@@ -221,7 +221,7 @@
     font-size:.9rem;
     color:#aaa;
   }
-/* FLOATING BUTTON */
+
 #floatingBotBtn {
   position: fixed;
   bottom: 25px;
@@ -248,7 +248,6 @@
   box-shadow: 0px 6px 35px rgba(255,0,255,0.6);
 }
 
-/* BOT PANEL */
 #botPanel {
   position: fixed;
   bottom: 90px;
@@ -267,7 +266,7 @@
   border: 2px solid rgba(120, 60, 255, 0.3);
 }
 
-/* HEADER  */
+
 .bot-header {
   background: linear-gradient(135deg, #00eaff, #b300ff);
   color: white;
@@ -278,7 +277,7 @@
   justify-content: space-between;
 }
 
-/*QUESTIONS  */
+
 .bot-questions {
   display: flex;
   overflow-x: auto;
@@ -304,7 +303,7 @@
   transform: scale(1.08);
 }
 
-/*  CHAT AREA */
+
 #chatArea {
   flex: 1;
   padding: 12px;
@@ -312,7 +311,7 @@
   scroll-behavior: smooth;
 }
 
-/* USER MESSAGE */
+
 .msg-user {
   background: rgba(255, 118, 230, 0.15);
   border-left: 3px solid #ff55ee;
@@ -326,7 +325,7 @@
   color: #fff;
 }
 
-/* BOT MESSAGE (BIGGER + LIGHT BACKGROUND) */
+
 .msg-bot {
   background: #ffffffd8;        
   color: #1b0050;              
